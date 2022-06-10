@@ -1,0 +1,122 @@
+:root {
+  --font-family: "Poppins", sans-serif;
+  --primary-color: #282d35;
+  --secondary-color: #21222a;
+  --letter-space: 0.04em;
+  --border-radius: 10px;
+  --border-radius-2: 5px;
+  --white: #f7f7f7;
+  --color-1: #ddac89;
+  --color-2: #13141b;
+  --grey: #b6b3b3;
+  --black: #1a1919;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-color);
+  font-family: var(--font-family);
+}
+
+.container {
+  background-color: var(--secondary-color);
+  width: 300px;
+  padding: 0;
+  border-radius: var(--border-radius);
+  margin-bottom: 4em;
+}
+
+/* Header */
+
+header {
+  width: 300px;
+  height: auto;
+  margin: 4em auto 0;
+  padding: 0;
+}
+
+.img {
+  background-image: url("./images/card-app-img.jpg");
+  width: 100%;
+  height: 290px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+
+.info--container {
+  text-align: center;
+  background-color: var(--secondary-color);
+}
+
+.name--title {
+  color: var(--white);
+  font-family: var(--font-family);
+  font-size: 1.9em;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.job {
+  color: var(--color-1);
+  font-size: 0.85em;
+}
+
+.address--link {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 0.8em;
+  color: var(--grey);
+}
+
+.btn {
+  text-transform: capitalize;
+  border: none;
+  margin-bottom: 0;
+}
+
+.btn:nth-last-child(1) {
+  background-color: #0a66c2;
+  color: var(--white);
+}
+
+/* Article */
+.article--about {
+  padding: 0 1.7em 0 1.7em;
+}
+.about--tile {
+  font-size: 1.3em;
+}
+
+.article--text {
+  font-size: 0.73em;
+  margin-top: 0;
+  color: var(--grey);
+  letter-spacing: var(--letter-space);
+  line-height: 1.2em;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1em;
+  background-color: var(--color-2);
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
+
+footer > a > i {
+  color: var(--black);
+  padding: 0.3em 0.5em;
+  background-color: gray;
+  border-radius: var(--border-radius-2);
+}
+
+footer > a > i:hover {
+  background-color: var(--white);
+}
